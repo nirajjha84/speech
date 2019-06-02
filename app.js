@@ -41,7 +41,7 @@ function readOutLoud(message) {
 
     if(message.includes('hi')) {
         speech.text = 'Hello, how are you dear?';
-    },
+    }
         
     if(message.includes('good')) {
         speech.text = 'That is great to hear. What can I do for you today?';
