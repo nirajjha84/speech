@@ -28,7 +28,7 @@ btn.addEventListener('click', () => {
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = 'I do not know what you said';
+    speech.text = 'I do not know what you said or my master has not made me enough knowledgeable to understand your question';
 
     if(message.includes('how are you')) {
         const finalText = greetings[Math.floor(Math.random() * greetings.length)];
@@ -41,6 +41,10 @@ function readOutLoud(message) {
 
     if(message.includes('hi')) {
         speech.text = 'Hello, how are you dear?';
+    },
+        
+    if(message.includes('good')) {
+        speech.text = 'That is great to hear. What can I do for you today?';
     }
 
     if(message.includes('special')) {
@@ -77,6 +81,14 @@ function readOutLoud(message) {
 
     if(message.includes('yes')) {
         speech.text = 'Yey, that is great. You are my life saver';
+    }
+    
+    if(message.includes('song')) {
+        speech.text = 'Sorry, I can not play song, I will learn that later';
+    }
+    
+    if(message.includes('food')) {
+        speech.text = 'I have no information on food at this moment';
     }
     
     speech.volume = 1;
