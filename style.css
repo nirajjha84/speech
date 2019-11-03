@@ -1,0 +1,32 @@
+body {  background: #1e2440;  color: #f2efe2;  font-size: 16px;  font-family: 'Kaushan Script', cursive;  font-family: 'Shadows Into Light', cursive;}
+.container {  position: relative;  width: 40vw; text-align: center;  max-width: 60vw;  margin: 0 auto;  color: #f2efe2;  margin-top: 10vh;}
+.fa {  
+    color: white;
+    border-radius: 50%;  
+    cursor: pointer; 
+    display: flex !important;  
+    align-items: center;  
+    justify-content: center;
+    font-size: 100px;
+}
+
+.active-mic {  
+    color: greenyellow;
+}
+.reference {
+    width: 100%;
+    text-align: center;
+    padding-top:20px;
+    color:yellow;
+}
+.content {
+    width: 100%;
+    text-align: center;
+    padding-top:20px;
+    color: #7CFC00;
+    font-size: 20px;
+}
+.instruction {
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+}
