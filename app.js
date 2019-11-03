@@ -23,11 +23,14 @@ recognition.onresult = function() {
     const transscript = event.results[current][0].transcript;
     content.textContent = transscript;
     readOutLoud(transscript);
+    // mic color and audio wave
+    document.getElementById('bars').className ='hide-audio-wave';
     document.getElementById('mic').classList.remove('active-mic');
 }
 
 btn.addEventListener('click', () => {
     document.getElementById('mic').classList.add('active-mic');
+    document.getElementById('bars').className = 'show-audio-wave';
     reference.textContent = '';
     recognition.start();
 });
